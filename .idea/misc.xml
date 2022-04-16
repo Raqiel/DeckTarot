@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_cinco_cartas.xml" value="0.1734375" />
+        <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_duas_cartas.xml" value="0.18" />
         <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_main.xml" value="0.1734375" />
+        <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_quatro_cartas.xml" value="0.1734375" />
+        <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_seis_cartas.xml" value="0.1734375" />
+        <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_tres_cartas.xml" value="0.1734375" />
         <entry key="..\:/DeckTarot/app/src/main/res/layout/activity_uma_carta.xml" value="0.1734375" />
       </map>
     </option>
