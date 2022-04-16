@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DeckTarot</string>
+    <string name="my_deck_tarot">My Deck Tarot</string>
+    <string name="seis_cartas">SEIS CARTAS</string>
+    <string name="cinco_cartas">CINCO CARTAS</string>
+    <string name="quatro_cartas">QUATRO CARTAS</string>
+    <string name="tres_cartas">TRES CARTAS</string>
+    <string name="duas_cartas">DUAS CARTAS</string>
+    <string name="uma_carta">UMA CARTA</string>
+    <string name="voltar">Voltar</string>
+</resources>
