@@ -7,7 +7,7 @@
     tools:context=".UmaCarta">
 
     <ImageView
-        android:id="@+id/imageView_uma_carta"
+        android:id="@+id/imageView_primeira_carta_taça_um"
         android:layout_width="259dp"
         android:layout_height="395dp"
         app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_uma_carta"
@@ -21,11 +21,19 @@
         android:id="@+id/button_voltar_taça_uma_carta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="#0F254A"
         android:text="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_embaralhar_taça_um"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Embaralhar"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="573dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
