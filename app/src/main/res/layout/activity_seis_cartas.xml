@@ -34,7 +34,7 @@
         android:id="@+id/imageView_segunda_carta_taça_seis_cartas"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_terceira_carta_taça_seis_cartas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,6 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toEndOf="@+id/imageView_terceira_carta_taça_seis_cartas"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_segunda_carta_taça_seis_cartas"
         app:srcCompat="@drawable/cavaleiro_de_espadas" />
 
     <Button

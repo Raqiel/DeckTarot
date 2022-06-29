@@ -34,7 +34,7 @@
         android:layout_height="381dp"
         android:layout_margin="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_duas_cartas"
-        app:layout_constraintEnd_toStartOf="@+id/secunda_carta_taca_dois"
+        app:layout_constraintEnd_toStartOf="@+id/segunda_carta_taca_dois"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/a_estrela" />

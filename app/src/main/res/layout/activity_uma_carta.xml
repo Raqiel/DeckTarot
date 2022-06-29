@@ -34,6 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Embaralhar"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="573dp" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="679dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

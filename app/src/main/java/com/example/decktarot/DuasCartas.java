@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.Random;
 
 public class DuasCartas extends AppCompatActivity {
+
+    private Button voltar;
 
     private static final Random rgenerador = new Random();
     private static final Integer[] imagenesID =
@@ -102,6 +105,7 @@ public class DuasCartas extends AppCompatActivity {
 
         Integer r = imagenesID[rgenerador.nextInt(imagenesID.length)];
         final ImageView iv2 = (ImageView) findViewById(R.id.segunda_carta_taca_dois);
+        voltar = findViewById(R.id.button_voltar_taça_duas_cartas);
 
 
 
@@ -116,6 +120,13 @@ public class DuasCartas extends AppCompatActivity {
                 iv.setImageResource(resource);
                 iv2.setImageResource(resource2);
 
+            }
+        });
+
+        voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

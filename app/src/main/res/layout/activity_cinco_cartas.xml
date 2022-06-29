@@ -10,31 +10,31 @@
     <ImageView
         android:id="@+id/imageView_primeira_carta_taça_cinco_cartas"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="260dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView_quinta_carta_taça_cinco_cartas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_quarta_carta_taça_cinco_cartas"
         app:srcCompat="@drawable/cavaleiro_de_espadas" />
 
 
     <ImageView
         android:id="@+id/imageView_segunda_carta_taça_cinco_cartas"
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView_quarta_carta_taça_cinco_cartas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toEndOf="@+id/imageView_terceira_carta_taça_cinco_cartas"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cavaleiro_de_espadas" />
 
     <ImageView
         android:id="@+id/imageView_terceira_carta_taça_cinco_cartas"
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView_primeira_carta_taça_cinco_cartas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
@@ -45,19 +45,19 @@
     <ImageView
         android:id="@+id/imageView_quarta_carta_taça_cinco_cartas"
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView_quinta_carta_taça_cinco_cartas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/cavaleiro_de_espadas" />
 
     <ImageView
         android:id="@+id/imageView_quinta_carta_taça_cinco_cartas"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="48dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_cinco_cartas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
