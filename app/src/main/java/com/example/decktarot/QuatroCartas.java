@@ -124,8 +124,8 @@ public class QuatroCartas extends AppCompatActivity {
                         imagenesID[rgenerador.nextInt(imagenesID.length)];
                 iv.setImageResource(resource);
                 iv2.setImageResource(resource2);
-                iv3.setImageResource(resource);
-                iv4.setImageResource(resource2);
+                iv3.setImageResource(resource3);
+                iv4.setImageResource(resource4);
 
             }
         });
