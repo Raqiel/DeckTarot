@@ -53,16 +53,27 @@
         app:srcCompat="@drawable/cavaleiro_de_espadas" />
 
 
-
     <Button
         android:id="@+id/button_voltar_taça_quatro_cartas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="#0F254A"
         android:text="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/embaralhar_taca_quatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#0F254A"
+        android:text="embaralhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
