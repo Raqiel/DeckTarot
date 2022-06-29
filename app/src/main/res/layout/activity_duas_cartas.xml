@@ -6,26 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DuasCartas">
 
-    <ImageView
-        android:id="@+id/imageView_primeira_carta_taça_duas_cartas"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="44dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_voltar2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/as_de_espadas" />
-
-    <ImageView
-        android:id="@+id/imageView_segunda_carta_taça_duas_cartas"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_duas_cartas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView_primeira_carta_taça_duas_cartas"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/as_de_ouros" />
-
     <Button
         android:id="@+id/button_voltar_taça_duas_cartas"
         android:layout_width="wrap_content"
@@ -36,4 +16,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_embaralhar_taca_dois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#0F254A"
+        android:text="embaralhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/primeira_carta_taca_dois"
+        android:layout_width="186dp"
+        android:layout_height="381dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_duas_cartas"
+        app:layout_constraintEnd_toStartOf="@+id/secunda_carta_taca_dois"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a_estrela" />
+
+    <ImageView
+        android:id="@+id/segunda_carta_taca_dois"
+        android:layout_width="185dp"
+        android:layout_height="379dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_voltar_taça_duas_cartas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a_estrela" />
 </androidx.constraintlayout.widget.ConstraintLayout>
