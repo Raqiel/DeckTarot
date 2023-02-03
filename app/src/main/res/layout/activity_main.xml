@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green01"
+    android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/backgroundazul"
     tools:context=".MainActivity">
 
 
@@ -16,9 +17,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:includeFontPadding="true"
-        android:text="@string/my_deck_tarot"
-        android:textColor="@color/white"
-        android:textSize="50sp" />
+        android:text="Escolha uma área da vida para obter uma resposta"
+        android:textAlignment="center"
+        android:textColor="@color/green02"
+        android:textSize="20sp" />
 
 
     <GridLayout
@@ -43,6 +45,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/green03"
             app:cardElevation="8dp">
 
             <Button
@@ -55,6 +58,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/green03"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -63,13 +67,16 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/uma_carta" />
+                    android:src="@drawable/ic_person"
+                    app:tint="@color/green02" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/uma_carta"
+                    android:text="@string/pessoal"
+                    android:textSize="20dp"
+                    android:textColor="@color/green02"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -88,6 +95,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/green03"
+
             app:cardElevation="8dp"
             >
 
@@ -107,13 +116,17 @@
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/duas_cartas" />
+                    app:tint="@color/green02"
+                    android:src="@drawable/ic_love" />
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/duas_cartas"
+                    android:text="@string/amor"
                     android:textStyle="bold"
+
+                    android:textSize="20dp"
+                    android:textColor="@color/green02"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -131,6 +144,8 @@
             android:layout_gravity="fill"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/green03"
+
             app:cardElevation="8dp">
 
             <Button
@@ -149,13 +164,17 @@
                 <ImageView
                     android:layout_width="47dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/tres_cartas" />
+                    app:tint="@color/green02"
+                    android:src="@drawable/ic_work" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tres_cartas"
+                    android:text="@string/trabalho"
                     android:textAlignment="center"
+
+                    android:textSize="20dp"
+                    android:textColor="@color/green02"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -173,6 +192,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/green03"
+
             app:cardElevation="8dp"
             >
 
@@ -192,105 +213,24 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/quatro_cartas" />
+                    app:tint="@color/green02"
+                    android:src="@drawable/ic_yes" />
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/quatro_cartas"
+                    android:text="@string/sim_ou_nao"
                     android:textStyle="bold"
+
+                    android:textSize="20dp"
+                    android:textColor="@color/green02"
                     android:textAlignment="center" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_cinco_cartas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
 
-            <Button
-                android:id="@+id/quinto_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/cinco_cartas" />
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/cinco_cartas"
-                    android:textStyle="bold"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_seis_cartas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-
-            <Button
-                android:id="@+id/sexto_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
-
-                <ImageView
-
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:src="@drawable/seis_cartas" />
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/seis_cartas"
-                    android:textStyle="bold"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
 
 

@@ -25,15 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CardView duascartas = findViewById(R.id.card_view_duas_cartas);
         CardView trescartas = findViewById(R.id.card_view_tres_cartas);
         CardView quatrocartas = findViewById(R.id.card_view_quatro_cartas);
-        CardView cincocartas = findViewById(R.id.card_view_cinco_cartas);
-        CardView seiscartas = findViewById(R.id.card_view_seis_cartas);
 
         umacarta.setOnClickListener(this);
         duascartas.setOnClickListener(this);
         trescartas.setOnClickListener(this);
         quatrocartas.setOnClickListener(this);
-        cincocartas.setOnClickListener(this);
-        seiscartas.setOnClickListener(this);
 
 
 
@@ -58,14 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent4 = new Intent(getApplicationContext(),QuatroCartas.class);
                 startActivity(intent4);
                 break;
-            case R.id.card_view_cinco_cartas:
-                Intent intent5 = new Intent(getApplicationContext(),CincoCartas.class);
-                startActivity(intent5);
-                break;
-            case R.id.card_view_seis_cartas:
-                Intent intent6 = new Intent(getApplicationContext(),SeisCartas.class);
-                startActivity(intent6);
-                break;
+
         }
 
     }

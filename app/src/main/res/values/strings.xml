@@ -8,4 +8,9 @@
     <string name="duas_cartas">DUAS CARTAS</string>
     <string name="uma_carta">UMA CARTA</string>
     <string name="voltar">Voltar</string>
+    <string name="pessoal">Pessoal</string>
+    <string name="amor">Amor</string>
+    <string name="trabalho">Trabalho</string>
+    <string name="sim_ou_nao">Sim ou não</string>
+
 </resources>
