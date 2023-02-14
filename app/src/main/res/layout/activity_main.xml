@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green01"
+    android:background="@color/card03"
     android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
@@ -16,228 +16,186 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/playfairdisplay_wght"
         android:includeFontPadding="true"
-        android:text="Escolha uma área da vida para obter uma resposta"
+        android:text="Sobre qual âmbito deseja saber?"
         android:textAlignment="center"
-        android:textColor="@color/green02"
-        android:textSize="20sp" />
+        android:textColor="@color/orange03"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
 
 
-    <GridLayout
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/carousel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         android:layout_below="@+id/my_deck_tarot"
-        android:columnCount="2"
-        android:rowCount="5"
-        tools:ignore ="GridLayout" >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_deck_tarot"
+        />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_uma_carta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="@color/green03"
-            app:cardElevation="8dp">
+    <!--    <HorizontalScrollView-->
 
-            <Button
-                android:id="@+id/primeiro_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible" />
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/my_deck_tarot"-->
+<!--        android:fillViewport="true"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/card_view_uma_carta"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:elevation="20dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/card_background"-->
+<!--                android:orientation="vertical" >-->
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/green03"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_person"
-                    app:tint="@color/green02" />
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_love"-->
+<!--                    app:tint="@color/blue02" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textColor="@color/blue02"-->
+<!--                    android:fontFamily="@font/playfairdisplay_wght"-->
+<!--                    android:text="Amor"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/pessoal"
-                    android:textSize="20dp"
-                    android:textColor="@color/green02"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
+<!--            </LinearLayout>-->
 
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+<!--            <LinearLayout-->
+<!--                android:id="@+id/card_view_duas_cartas"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/card_background"-->
+<!--                android:orientation="horizontal" >-->
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_duas_cartas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="@color/green03"
 
-            app:cardElevation="8dp"
-            >
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_person"-->
+<!--                    app:tint="@color/blue02" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textColor="@color/blue02"-->
+<!--                    android:fontFamily="@font/playfairdisplay_wght"-->
+<!--                    android:text="Pessoal"/>-->
+<!--            </LinearLayout>-->
 
-            <Button
-                android:id="@+id/segundo_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible"/>
+<!--            <LinearLayout-->
+<!--                android:id="@+id/card_view_tres_cartas"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/card_background"-->
+<!--                android:orientation="horizontal" >-->
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
 
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    app:tint="@color/green02"
-                    android:src="@drawable/ic_love" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/amor"
-                    android:textStyle="bold"
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_work"-->
+<!--                    app:tint="@color/blue02" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textColor="@color/blue02"-->
+<!--                    android:fontFamily="@font/playfairdisplay_wght"-->
+<!--                    android:text="Profissional"/>-->
+<!--            </LinearLayout>-->
 
-                    android:textSize="20dp"
-                    android:textColor="@color/green02"
-                    android:textAlignment="center" />
+<!--            <LinearLayout-->
+<!--                android:id="@+id/card_view_quatro_cartas"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/card_background"-->
+<!--                android:orientation="horizontal" >-->
 
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_tres_cartas"
-            android:layout_width="wrap_content"
-            android:layout_height="72dp"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="@color/green03"
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_yes"-->
+<!--                    app:tint="@color/blue02" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textColor="@color/blue02"-->
+<!--                    android:fontFamily="@font/playfairdisplay_wght"-->
+<!--                    android:text="Sim ou não"/>-->
+<!--            </LinearLayout>-->
 
-            app:cardElevation="8dp">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/card_view_cinco_cartas"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="400dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/card_background"-->
+<!--                android:orientation="horizontal" >-->
 
-            <Button
-                android:id="@+id/terceiro_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="47dp"
-                    android:layout_height="56dp"
-                    app:tint="@color/green02"
-                    android:src="@drawable/ic_work" />
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@android:drawable/stat_notify_sdcard"-->
+<!--                    app:tint="@color/blue02" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textColor="@color/blue02"-->
+<!--                    android:fontFamily="@font/playfairdisplay_wght"-->
+<!--                    android:text="Todas as cartas"/>-->
+<!--            </LinearLayout>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/trabalho"
-                    android:textAlignment="center"
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:background="#000000"-->
+<!--                android:alpha="@integer/material_motion_duration_long_1"-->
+<!--                android:translationZ="8dp" />-->
 
-                    android:textSize="20dp"
-                    android:textColor="@color/green02"
-                    android:textStyle="bold" />
+<!--        </LinearLayout>-->
 
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_quatro_cartas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="@color/green03"
-
-            app:cardElevation="8dp"
-            >
-
-            <Button
-                android:id="@+id/quarto_botao"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    app:tint="@color/green02"
-                    android:src="@drawable/ic_yes" />
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/sim_ou_nao"
-                    android:textStyle="bold"
-
-                    android:textSize="20dp"
-                    android:textColor="@color/green02"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
+<!--    </HorizontalScrollView>-->
 
 
 
 
 
 
-    </GridLayout>
 
-
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+
+<!--    preto e branco-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+<!--    blue-->
+    <color name="blue01">#02182d</color>
+    <color name="blue02">#434776</color>
+    <color name="blue03">#02182d</color>
+    <color name="blue04">#c3c8e8</color>
 
+<!--    purple-->
+    <color name="purple01">#271d28</color>
+
+<!--    pink-->
+    <color name="pink01">#cb6a9f</color>
+    <color name="pink02">#cf5588</color>
+
+<!--    orange-->
+    <color name="orange01">#fef3f1</color>
+    <color name="orange02">#fbc5bb</color>
+    <color name="orange03">#f38f5b</color>
+
+<!--    green-->
     <color name="green01">#002021</color>
     <color name="green02">#a8eff0</color>
     <color name="green03">#19686a</color>
 
+
+<!--    cartas-->
+    <color name="card01">#cf5588</color>
+    <color name="card02">#a1ded6</color>
+    <color name="card03">#484055</color>
+    <color name="card04">#ff686d</color>
+    <color name="card05">#007f85</color>
+    <color name="card06">#fbc5bb</color>
 
 </resources>

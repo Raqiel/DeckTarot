@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cavaleiro_de_espadas" />
+        app:srcCompat="@drawable/ic_love" />
 
     <ImageView
         android:id="@+id/imageView_terceira_carta_taça_quatro_cartas"
@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_primeira_carta_taça_quatro_cartas"
         app:layout_constraintVertical_bias="0.533"
-        app:srcCompat="@drawable/cavaleiro_de_espadas" />
+        app:srcCompat="@drawable/ic_love" />
 
     <ImageView
         android:id="@+id/imageView_segunda_carta_taça_quatro_cartas"
@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/cavaleiro_de_espadas" />
+        app:srcCompat="@drawable/ic_love" />
 
     <ImageView
         android:id="@+id/imageView_quarta_carta_taça_quatro_cartas"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_segunda_carta_taça_quatro_cartas"
         app:layout_constraintVertical_bias="0.53"
-        app:srcCompat="@drawable/cavaleiro_de_espadas" />
+        app:srcCompat="@drawable/ic_love" />
 
 
     <Button

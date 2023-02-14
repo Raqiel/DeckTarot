@@ -1,61 +1,45 @@
 package com.example.decktarot;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
 
-import java.util.Random;
+import com.example.decktarot.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
 
+public class MainActivity extends AppCompatActivity {
 
-
-
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        CardView umacarta = findViewById(R.id.card_view_uma_carta);
-        CardView duascartas = findViewById(R.id.card_view_duas_cartas);
-        CardView trescartas = findViewById(R.id.card_view_tres_cartas);
-        CardView quatrocartas = findViewById(R.id.card_view_quatro_cartas);
-
-        umacarta.setOnClickListener(this);
-        duascartas.setOnClickListener(this);
-        trescartas.setOnClickListener(this);
-        quatrocartas.setOnClickListener(this);
+        ArrayList<CarouselModel> categoryList = new ArrayList<>();
+        categoryList.add(new CarouselModel(R.drawable.category_love, "Amor"));
+        categoryList.add(new CarouselModel(R.drawable.category_work, "Trabalho"));
+        categoryList.add(new CarouselModel(R.drawable.o_diabo, "Pessoal"));
+        categoryList.add(new CarouselModel(R.drawable.o_eremita, "Sim ou não"));
+        categoryList.add(new CarouselModel(R.drawable.o_mundo, "Todas as cartas"));
 
 
+        CarouselAdapter adapter = new CarouselAdapter(categoryList);
+        binding.carousel.setAdapter(adapter);
+        binding.carousel.set3DItem(true);
+        binding.carousel.setInfinite(true);
+        binding.carousel.setAlpha(false);
 
-    }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.card_view_uma_carta:
-                Intent intent1 = new Intent(getApplicationContext(),UmaCarta.class);
-                startActivity(intent1);
-                break;
-            case R.id.card_view_duas_cartas:
-                Intent intent2 = new Intent(getApplicationContext(),DuasCartas.class);
-                startActivity(intent2);
-                break;
-            case R.id.card_view_tres_cartas:
-                Intent intent3 = new Intent(getApplicationContext(),TresCartas.class);
-                startActivity(intent3);
-                break;
-            case R.id.card_view_quatro_cartas:
-                Intent intent4 = new Intent(getApplicationContext(),QuatroCartas.class);
-                startActivity(intent4);
-                break;
 
-        }
 
     }
+
+
 }
