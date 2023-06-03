@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 public class UmaCarta extends AppCompatActivity {
+
+
 
     static class Carta {
         int imagemID;
@@ -25,6 +29,8 @@ public class UmaCarta extends AppCompatActivity {
     }
 
     private Button voltar;
+    private EditText editText;
+    private Button send;
 
     private static final Random rgenerador = new Random();
     private static final Carta[] cartas = {
@@ -126,6 +132,21 @@ public class UmaCarta extends AppCompatActivity {
         final TextView nomeCarta = (TextView) findViewById(R.id.nome_carta);
         final TextView textoCarta = (TextView) findViewById(R.id.texto);
         voltar = findViewById(R.id.button_voltar_taça_uma_carta);
+        editText = findViewById(R.id.edit_text);
+
+        String pergunta = editText.getText().toString();
+        send = findViewById(R.id.button_enviar);
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String pergunta = editText.getText().toString();
+                Toast.makeText(getApplicationContext(), pergunta, Toast.LENGTH_SHORT).show();
+
+                String carta = nomeCarta.getText().toString();
+                Toast.makeText(getApplicationContext(), carta, Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         nomeCarta.setText(q.nome);
         iv.setImageResource(q.imagemID);

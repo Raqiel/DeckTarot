@@ -45,5 +45,9 @@ dependencies {
     implementation 'com.github.sparrow007:carouselrecyclerview:1.2.4'
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.13.0'
+
+    //CHAT GPT
+
+    implementation 'com.example:chatgpt-library:1.2.0'
     
 }
